@@ -144,7 +144,7 @@
         this.story.clear();
 
         if (this.baseurl && (this.baseurl !== actions.global.baseurl)) {
-          this.baseurl = actions.global.baseurl || 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+          this.baseurl = actions.global.baseurl || 'https://0.tile.openstreetmap.org/{z}/{x}/{y}.png';
 
           this.basemap.setUrl(this.baseurl);
         }
