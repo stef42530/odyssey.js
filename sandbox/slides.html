@@ -74,14 +74,14 @@
     function adjustSlides() {
       var container = document.getElementById("slides_container"),
           slide = document.querySelectorAll('.selected_slide')[0];
-
+      // stef comments: if slide too long then slide scrolled and height is limited
       if (slide) {
         if (slide.offsetHeight+169+40+80 >= window.innerHeight) {
-          container.style.bottom = "80px";
+          container.style.bottom = "40px"; //stef 80->40
 
           var h = container.offsetHeight;
 
-          slide.style.height = h-169+"px";
+          slide.style.height = h-169+40+"px"; //stef h-169->h-1-69+40
           slide.classList.add("scrolled");
         } else {
           container.style.bottom = "auto";
