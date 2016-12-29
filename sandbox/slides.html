@@ -15,7 +15,7 @@
   <script src="../vendor/modernizr-2.6.2.min.js"></script>
 <!-- stef : dec 2016 Modernizr 3.3.1 -->
   
-<!-- stef toggle hide/view div 'credits' (bootom) with a button (top) and min js-->
+<!-- stef one button for more screen space toggle hide/view div 'credits' (bootom) with a button (top) and min js-->
   <style>
 #myBtn2 {
     position: fixed;
@@ -256,14 +256,19 @@
     });
   </script>
 
-      <!-- stef toggle -->
-      <script>
+      <!-- stef save space screen by toggle -->
+<script>
 function myFunction2() {
-    var x = document.getElementById('credits');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
+    var xx = document.getElementById('credits'), xy = document.getElementById('slides_container');
+    if (xx.style.display === 'none') 
+    {
+        xx.style.display = 'block';
+        xy.style.width='380px';
+        
+    } 
+  else {
+        xx.style.display = 'none';
+        xy.style.width='540px'; // increase width 
     }
 }
 </script>
