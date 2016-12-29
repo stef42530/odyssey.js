@@ -14,6 +14,18 @@
   <link rel="stylesheet" href="css/slides.css" />
   <script src="../vendor/modernizr-2.6.2.min.js"></script>
 <!-- stef : dec 2016 Modernizr 3.3.1 -->
+  
+<!-- stef toggle hide/view div 'credits' (bootom) with a button (top) and min js-->
+  <style>
+#myBtn2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+}
+</style>
+<!-- stef toggle -->
+  
 </head>
 <body>
   <div id="map" style="width: 100%; height: 100%;"></div>
@@ -28,7 +40,11 @@
       <li><a class='next'></a></li>
     </ul>
   </div>
-
+  
+<!-- stef toggle -->
+  <button type="button" id="myBtn2" onclick="myFunction2()">credits</button>
+<!-- stef toggle -->
+  
   <div id="credits">
     <span class="title" id="title">Title</span>
     <span class="author"><strong id="author">By Name using</strong> <a href="https://cartodb.github.io/odyssey.js/">Odyssey.js</a><span>
@@ -240,6 +256,19 @@
     });
   </script>
 
+      <!-- stef toggle -->
+      <script>
+function myFunction2() {
+    var x = document.getElementById('credits');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+      <!-- stef toggle -->
+      
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
