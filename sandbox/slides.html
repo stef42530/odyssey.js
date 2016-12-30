@@ -44,6 +44,16 @@
 <!-- stef toggle -->
   <button type="button" id="myBtn2" onclick="myFunction2()">credits</button>
 <!-- stef toggle -->
+
+  <!-- stef credits height= 60px -->
+  <style>
+#credits {
+    height: 60px;
+    background-color: lightblue;
+    margin-top:15px;
+}
+  </style>
+<!-- stef credits height -->
   
   <div id="credits">
     <span class="title" id="title">Title</span>
@@ -74,7 +84,7 @@
     function adjustSlides() {
       var container = document.getElementById("slides_container"),
           slide = document.querySelectorAll('.selected_slide')[0];
-      // stef comments: if slide too long then slide scrolled and height is limited
+      // stef comments: if slide too long then 'slide scrolled' height is limited
       if (slide) {
         if (slide.offsetHeight+169+40+80 >= window.innerHeight) {
           container.style.bottom = "45px"; //stef 80->45
