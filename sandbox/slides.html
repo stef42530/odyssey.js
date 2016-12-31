@@ -33,7 +33,7 @@
   <div id="slides_container" style="display:block;">
     <div id="dots" style="padding: 8px 8px 8px 8px; margin: 1px 1px 1px 1px;"></div>
 <!-- stef: navButton are just below dots -->
-    <ul id='navButtons' style="height: 30px; padding: 1px 1px 1px 1px; margin: 1px 1px 1px 1px; text-indent: 1px;">
+    <ul id='navButtons' style="height: 30px; padding: 1px 1px 1px 1px; margin: 1px 1px 1px 1px; text-indent: 1px; border-top-style: ridge; border-bottom-style: none;border-left-style: none;border-right-style: none;">
       <li><a class='prev'></a></li>
       <li><a class='next'></a></li>
     </ul>
@@ -48,9 +48,9 @@
 <!-- stef toggle -->
 
   <!-- stef credits height= 30px -->
-  <div id="credits" style="height:29px; padding: 1px 1px 1px 1px; margin: 1px 1px 1px 1px; border: 1px solid white; text-indent: 1px; line-height: 0.8;">
+  <div id="credits" style="height:27px; padding: 1px 1px 1px 1px; margin: 1px 1px 1px 1px; text-indent: 1px; line-height: 0.8;">
     <span class="title" id="title">Title</span>
-    <span class="author"><strong id="author">By Name using</strong> <a href="https://cartodb.github.io/odyssey.js/">Odyssey.js</a><span>
+    <span class="author"><strong id="author">By Name using</strong> <a href="https://cartodb.github.io/odyssey.js/">Odyssey.js</a></span>
   </div>
 
   <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/cartodb.js"></script>
@@ -84,7 +84,7 @@
 
           var h = container.offsetHeight;
 
-          slide.style.height = h-169+115+"px"; //stef: h-169->h-169+115
+          slide.style.height = h-169+110+"px"; //stef: h-169->h-169+110
           slide.classList.add("scrolled");
         } else {
           container.style.bottom = "auto";
