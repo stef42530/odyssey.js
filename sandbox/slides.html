@@ -33,7 +33,7 @@
   <div id="slides_container" style="display:block;">
     <div id="dots"></div>
 <!-- stef: navButton are just below dots -->
-    <ul id='navButtons' style="height:48px; padding: 1px 1px 1px 1px; margin: 1px 1px 1px 1px; border: 1px solid white; text-indent: 1px; line-height: 0.9;">
+    <ul id='navButtons' style="height: 30px; padding: 1px 1px 1px 1px; margin: 1px 1px 1px 1px; border: 1px solid white; text-indent: 1px;">
       <li><a class='prev'></a></li>
       <li><a class='next'></a></li>
     </ul>
@@ -79,12 +79,12 @@
           slide = document.querySelectorAll('.selected_slide')[0];
       // stef comments: if slide too long then 'slide scrolled' height is limited
       if (slide) {
-        if (slide.offsetHeight+169+40+45 >= window.innerHeight) { //stef 80->45
-          container.style.bottom = "45px"; //stef 80->45
+        if (slide.offsetHeight+169+40+25 >= window.innerHeight) { //stef 80->25
+          container.style.bottom = "25px"; //stef 80->25
 
           var h = container.offsetHeight;
 
-          slide.style.height = h-169+45+"px"; //stef h-169->h-169+45
+          slide.style.height = h-169+25+"px"; //stef h-169->h-169+45
           slide.classList.add("scrolled");
         } else {
           container.style.bottom = "auto";
