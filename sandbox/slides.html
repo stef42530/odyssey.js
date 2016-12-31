@@ -33,7 +33,7 @@
   <div id="slides_container" style="display:block;">
     <div id="dots" style="padding: 8px 8px 8px 8px; margin: 1px 1px 1px 1px;"></div>
 <!-- stef: navButton are just below dots -->
-    <ul id='navButtons' style="height: 30px; padding: 1px 1px 1px 1px; margin: 1px 1px 1px 1px; text-indent: 1px;border: 2px solid grey; border-top-style: ridge; border-bottom-style: none;border-left-style: none;border-right-style: none;">
+    <ul id='navButtons' style="height: 28px; padding: 1px 1px 1px 1px; margin: 1px 1px 1px 1px; text-indent: 1px;border: 3px solid grey; border-top-style: none; border-bottom-style: ridge; border-left-style: none;border-right-style: none;">
       <li><a class='prev'></a></li>
       <li><a class='next'></a></li>
     </ul>
@@ -77,9 +77,10 @@
     function adjustSlides() {
       var container = document.getElementById("slides_container"),
           slide = document.querySelectorAll('.selected_slide')[0];
+      
       // stef comments: if slide too long then 'slide scrolled' height is limited
       if (slide) {
-        if (slide.offsetHeight+169+40+25 >= window.innerHeight) { //stef 80->25
+        if (slide.offsetHeight+169+40+35 >= window.innerHeight) { //stef 80->35
           container.style.bottom = "25px"; //stef 80->25
 
           var h = container.offsetHeight;
