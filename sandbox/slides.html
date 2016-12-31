@@ -77,12 +77,12 @@
           slide = document.querySelectorAll('.selected_slide')[0];
       // stef comments: if slide too long then 'slide scrolled' height is limited
       if (slide) {
-        if (slide.offsetHeight+169+40+80 >= window.innerHeight) {
+        if (slide.offsetHeight+169+40+45 >= window.innerHeight) { //stef 80->45
           container.style.bottom = "45px"; //stef 80->45
 
           var h = container.offsetHeight;
 
-          slide.style.height = h-169+45+"px"; //stef h-169->h-1-69+45
+          slide.style.height = h-169+45+"px"; //stef h-169->h-169+45
           slide.classList.add("scrolled");
         } else {
           container.style.bottom = "auto";
@@ -135,7 +135,7 @@
         var baseurl = this.baseurl = 'http://{s}.api.cartocdn.com/base-light/{z}/{x}/{y}.png';
         var map = this.map = L.map('map').setView([0, 0.0], 4);
         var basemap = this.basemap = L.tileLayer(baseurl, {
-          attribution: 'data OSM - map CartoDB'
+          attribution: 'data OSM-map CartoDB'
         }).addTo(map);
 
         // enanle keys to move
@@ -257,7 +257,7 @@
     });
   </script>
 
-      <!-- stef save space screen by toggle -->
+      <!-- stef save screen space  by toggle -->
 <script>
 function myFunction2() {
     var xx = document.getElementById('credits'), xy = document.getElementById('slides_container');
@@ -278,7 +278,7 @@ function myFunction2() {
         xy.style.padding='10px';      
         //xy.style.bottom='20px';        
         xy.style.top='15px';             
-        xy.style.left='30px';              
+        xy.style.left='33px';              
     }
 }
 </script>
