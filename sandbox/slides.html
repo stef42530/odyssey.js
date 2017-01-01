@@ -33,7 +33,7 @@
   <div id="slides_container" style="display:block;">
     <div id="dots" style="padding: 8px 8px 8px 8px; margin: 1px 1px 1px 1px;"></div>
 <!-- stef: navButton are just below dots -->
-    <ul id='navButtons' style="height: 28px; padding: 1px 1px 1px 1px; margin: 10px 1px 10px 1px; text-indent: 1px;border: 2px solid grey; border-top-style: none; border-bottom-style: ridge; border-left-style: none;border-right-style: none;">
+    <ul id='navButtons' style="height: 28px; padding: 1px 1px 1px 1px; margin: 1px 1px 10px 10px; text-indent: 1px;border: 2px solid grey; border-top-style: none; border-bottom-style: ridge; border-left-style: none;border-right-style: none;">
       <li><a class='prev'></a></li>
       <li><a class='next'></a></li>
     </ul>
@@ -48,7 +48,7 @@
 <!-- stef toggle -->
 
   <!-- stef credits height= 30px -->
-  <div id="credits" style="height:26px;">
+  <div id="credits" style="height:29px;">
     <span class="title" id="title">Title</span>
     <span class="author"><strong id="author">By Name using</strong> <a href="https://cartodb.github.io/odyssey.js/">Odyssey.js</a></span>
   </div>
@@ -91,7 +91,7 @@
           slide.style.height = h-169+93+"px"; //stef: h-169->h-169+93
           slide.classList.add("scrolled");
           //stef
-          console.log("container.offsetHeight: " + h + "//" + "slide.offsetHeight:" + hh );
+          console.log("container.offsetHeight: " + h + "//" + "slide.offsetHeight:" + hh +"//" + window.innerHeight);
           //stef
           
         } else {
