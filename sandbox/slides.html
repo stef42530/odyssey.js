@@ -81,17 +81,17 @@
       // stef comments: if slide too long then 'slide scrolled' height is limited
       if (slide) {
         if (slide.offsetHeight+169+40+37 >= window.innerHeight) { //stef 80->37
-          container.style.bottom = "33px"; //stef 80->33
+          container.style.bottom = "32px"; //stef 80->32
 
           var h = container.offsetHeight;
           //stef
           var hh = slide.offsetHeight;
           //stef
 
-          slide.style.height = h-169+85+"px"; //stef: h-169->h-169+85
+          slide.style.height = h-169+82+"px"; //stef: h-169->h-169+82
           slide.classList.add("scrolled");
           //stef
-          console.log("container.offsetHeight: " + h + "//" + "slide.offsetHeight:" + hh +"//" + window.innerHeight);
+          // console.log("container.offsetHeight: " + h + "$" + "slide.offsetHeight:" + hh +"$" + window.innerHeight);
           //stef
           
         } else {
